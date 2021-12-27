@@ -1,3 +1,4 @@
+import 'package:brew_crew/screens/authenticate/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -14,9 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(child: Text('BREW CREW')),
-      ),
+      home: Wrapper(),
     );
   }
 }
