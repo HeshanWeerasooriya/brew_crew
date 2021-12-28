@@ -53,7 +53,7 @@ class AuthService {
       await DatabaseService(uid: user!.uid)
           .updateUserData('0', 'new crew member', 100);
 
-      return _userFromFirebaseUser(user!);
+      return _userFromFirebaseUser(user);
     } catch (error) {
       print(error.toString());
       return null;
